@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--
+This file is part of Warbirds BDA Script Generator.
+
+    Foobar is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Warbirds BDA Script Generator is distributed in the hope that it will 
+    be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
+
+(c) Noflyz - United Mud Movers - noflyz.wix.com/united-mud-movers
+-->
+<html ng-app="assets">
+  <head>
+    <title>Warbirds BDA Script Generator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="assets.js"></script>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Warbirds BDA Script Generator</h1>
+
+    <h2>What is this?</h2>
+    This is an application that will let you generate a script that can be run inside of the Warbirds game that will print out information about objects destroyed and remaining.
+    <h2>Why do I want this?</h2> If you have to ask you probably don't need it. It is useful in some gameplay to be able to have an idea of what assets remain in a field.
+    <h2>How do I use this</h2>
+    Each field has several objects. Turning on ground labels in Warbirds you can read these labels. Another way to get a list of objects in a field is to use the destroyall dotcommand. e.g. if you type in:
+    <pre>
+	.destroyall 1
+    </pre>
+    This will destroy all objects in field 1 and print out a list of objects destroyed. The objects are labeled something like: F012HG001 or F123G0001. The Fnnn stands for the field number paded with 0s so F1 should be written F001. The next part XXnnn is a two letter asset type code and the asset number. If field 5 has two hangers they would be named F005HG001 and F005HG002. To specify 2 hangers select "HG" from the "Type" drop down. Select 2 for "How Many" and leave "Start at" alone for now. click on the "+" or add button. Set the Field number to 5.</p>
+
+If you make a mistake you can remove an entry by pressing the "-" button next to it and you can always correct quantaties in the above drop down boxes and hit + again to see the change affected. </p>
+The script is generated as you make changes in the area at the bottom of the page. 
+    
+    <asset-list></asset-list>
+
+    <hr>
+    <address><a href="mailto:raviyer@yahoo.com">(c) Noflyz - United Mud Movers - Engineering Wing</a></address>
+<!-- Created: Fri May  1 11:18:17 PDT 2015 -->
+<!-- hhmts start -->
+Last modified: Fri May  1 19:55:07 PDT 2015
+<!-- hhmts end -->
+  </body>
+</html>

@@ -1,0 +1,858 @@
+
+%
+.vargetint fn "Please enter field number"
+.intsto G0_count 0
+.intsto G0_total 0
+.intsto G1_count 0
+.intsto G1_total 0
+.intsto G2_count 0
+.intsto G2_total 0
+.intsto G3_count 0
+.intsto G3_total 0
+.intsto G4_count 0
+.intsto G4_total 0
+.intsto HG_count 0
+.intsto HG_total 0
+.intsto RW_count 0
+.intsto RW_total 0
+.intsto HQ_count 0
+.intsto HQ_total 0
+.intsto TW_count 0
+.intsto TW_total 0
+.intsto TX_count 0
+.intsto TX_total 0
+.intsto BO_count 0
+.intsto BO_total 0
+.intsto BE_count 0
+.intsto BE_total 0
+.intsto CB_count 0
+.intsto CB_total 0
+.intsto BB_count 0
+.intsto BB_total 0
+.intsto ST_count 0
+.intsto ST_total 0
+.intsto RD_count 0
+.intsto RD_total 0
+.intsto C0_count 0
+.intsto C0_total 0
+.intsto C1_count 0
+.intsto C1_total 0
+.intsto AS_count 0
+.intsto AS_total 0
+.intsto FM_count 0
+.intsto FM_total 0
+.intsto LM_count 0
+.intsto LM_total 0
+.intsto DM_count 0
+.intsto DM_total 0
+.intsto SM_count 0
+.intsto SM_total 0
+.intsto CM_count 0
+.intsto CM_total 0
+.intsto WM_count 0
+.intsto WM_total 0
+.intsto PL_count 0
+.intsto PL_total 0
+.intsto X?_count 0
+.intsto X?_total 0
+.intsto PA_count 0
+.intsto PA_total 0
+.intsto A0_count 0
+.intsto A0_total 0
+.intsto A1_count 0
+.intsto A1_total 0
+.intsto A2_count 0
+.intsto A2_total 0
+.intsto FD_count 0
+.intsto FD_total 0
+.intsto RS_count 0
+.intsto RS_total 0
+.intsto WH_count 0
+.intsto WH_total 0
+.intsto AD_count 0
+.intsto AD_total 0
+.intsto HT_count 0
+.intsto HT_total 0
+.intsto HS_count 0
+.intsto HS_total 0
+.intsto RK_count 0
+.intsto RK_total 0
+.intsto TR_count 0
+.intsto TR_total 0
+.intsto B1_count 0
+.intsto B1_total 0
+.intsto G5_count 0
+.intsto G5_total 0
+.intsto G6_count 0
+.intsto G6_total 0
+.intsto EA_count 0
+.intsto EA_total 0
+.intsto EB_count 0
+.intsto EB_total 0
+.intsto EC_count 0
+.intsto EC_total 0
+.intsto ED_count 0
+.intsto ED_total 0
+.intsto EE_count 0
+.intsto EE_total 0
+.intsto EF_count 0
+.intsto EF_total 0
+.intsto EG_count 0
+.intsto EG_total 0
+.intsto EH_count 0
+.intsto EH_total 0
+.intsto EI_count 0
+.intsto EI_total 0
+.intsto EJ_count 0
+.intsto EJ_total 0
+.intsto EK_count 0
+.intsto EK_total 0
+.intsto EL_count 0
+.intsto EL_total 0
+.intsto EM_count 0
+.intsto EM_total 0
+.intsto EN_count 0
+.intsto EN_total 0
+.intsto EO_count 0
+.intsto EO_total 0
+.intsto EP_count 0
+.intsto EP_total 0
+.intsto EQ_count 0
+.intsto EQ_total 0
+.intsto ER_count 0
+.intsto ER_total 0
+.intsto ES_count 0
+.intsto ES_total 0
+.intsto ET_count 0
+.intsto ET_total 0
+.intsto EU_count 0
+.intsto EU_total 0
+.intsto EV_count 0
+.intsto EV_total 0
+.intsto EW_count 0
+.intsto EW_total 0
+.intsto EX_count 0
+.intsto EX_total 0
+.intsto EY_count 0
+.intsto EY_total 0
+.intsto G7_count 0
+.intsto G7_total 0
+.intsto G8_count 0
+.intsto G8_total 0
+.intsto G9_count 0
+.intsto G9_total 0
+.intsto GA_count 0
+.intsto GA_total 0
+.intsto GB_count 0
+.intsto GB_total 0
+
+switch (@fn@)
+{
+case 1
+.return ob1.dtf
+case 2
+.return ob2.dtf
+case 3
+.return ob3.dtf
+case 4
+.return ob4.dtf
+case 5
+.return ob5.dtf
+case 6
+.return ob6.dtf
+case 7
+.return ob7.dtf
+case 8
+.return ob8.dtf
+case 9
+.return ob9.dtf
+case 10
+.return ob10.dtf
+case 11
+.return ob11.dtf
+case 12
+.return ob12.dtf
+case 13
+.return ob13.dtf
+case 14
+.return ob14.dtf
+case 15
+.return ob15.dtf
+case 16
+.return ob16.dtf
+case 17
+.return ob17.dtf
+case 18
+.return ob18.dtf
+case 19
+.return ob19.dtf
+case 20
+.return ob20.dtf
+case 21
+.return ob21.dtf
+case 22
+.return ob22.dtf
+case 23
+.return ob23.dtf
+case 24
+.return ob24.dtf
+case 25
+.return ob25.dtf
+case 26
+.return ob26.dtf
+case 27
+.return ob27.dtf
+case 28
+.return ob28.dtf
+case 29
+.return ob29.dtf
+case 30
+.return ob30.dtf
+case 31
+.return ob31.dtf
+case 32
+.return ob32.dtf
+case 33
+.return ob33.dtf
+case 34
+.return ob34.dtf
+case 35
+.return ob35.dtf
+case 36
+.return ob36.dtf
+case 37
+.return ob37.dtf
+case 38
+.return ob38.dtf
+case 39
+.return ob39.dtf
+case 40
+.return ob40.dtf
+case 41
+.return ob41.dtf
+case 42
+.return ob42.dtf
+case 43
+.return ob43.dtf
+case 44
+.return ob44.dtf
+case 45
+.return ob45.dtf
+case 46
+.return ob46.dtf
+case 47
+.return ob47.dtf
+case 48
+.return ob48.dtf
+case 49
+.return ob49.dtf
+case 50
+.return ob50.dtf
+case 51
+.return ob51.dtf
+case 52
+.return ob52.dtf
+case 53
+.return ob53.dtf
+case 54
+.return ob54.dtf
+case 55
+.return ob55.dtf
+case 56
+.return ob56.dtf
+case 57
+.return ob57.dtf
+case 58
+.return ob58.dtf
+case 59
+.return ob59.dtf
+case 60
+.return ob60.dtf
+case 61
+.return ob61.dtf
+case 62
+.return ob62.dtf
+case 63
+.return ob63.dtf
+case 64
+.return ob64.dtf
+case 65
+.return ob65.dtf
+case 66
+.return ob66.dtf
+case 67
+.return ob67.dtf
+case 68
+.return ob68.dtf
+case 69
+.return ob69.dtf
+case 70
+.return ob70.dtf
+case 71
+.return ob71.dtf
+case 72
+.return ob72.dtf
+case 73
+.return ob73.dtf
+case 74
+.return ob74.dtf
+case 75
+.return ob75.dtf
+case 76
+.return ob76.dtf
+case 77
+.return ob77.dtf
+case 78
+.return ob78.dtf
+case 79
+.return ob79.dtf
+case 80
+.return ob80.dtf
+case 81
+.return ob81.dtf
+case 82
+.return ob82.dtf
+case 83
+.return ob83.dtf
+case 84
+.return ob84.dtf
+case 85
+.return ob85.dtf
+case 86
+.return ob86.dtf
+case 87
+.return ob87.dtf
+case 88
+.return ob88.dtf
+case 89
+.return ob89.dtf
+case 90
+.return ob90.dtf
+case 91
+.return ob91.dtf
+case 92
+.return ob92.dtf
+case 93
+.return ob93.dtf
+case 94
+.return ob94.dtf
+case 95
+.return ob95.dtf
+case 96
+.return ob96.dtf
+case 97
+.return ob97.dtf
+case 98
+.return ob98.dtf
+case 99
+.return ob99.dtf
+case 100
+.return ob100.dtf
+case 101
+.return ob101.dtf
+case 102
+.return ob102.dtf
+case 103
+.return ob103.dtf
+case 104
+.return ob104.dtf
+case 105
+.return ob105.dtf
+case 106
+.return ob106.dtf
+case 107
+.return ob107.dtf
+case 108
+.return ob108.dtf
+case 109
+.return ob109.dtf
+case 110
+.return ob110.dtf
+case 111
+.return ob111.dtf
+case 112
+.return ob112.dtf
+case 113
+.return ob113.dtf
+case 114
+.return ob114.dtf
+case 115
+.return ob115.dtf
+case 116
+.return ob116.dtf
+case 117
+.return ob117.dtf
+case 118
+.return ob118.dtf
+case 119
+.return ob119.dtf
+case 120
+.return ob120.dtf
+case 121
+.return ob121.dtf
+case 122
+.return ob122.dtf
+case 123
+.return ob123.dtf
+case 124
+.return ob124.dtf
+case 125
+.return ob125.dtf
+case 126
+.return ob126.dtf
+case 127
+.return ob127.dtf
+case 128
+.return ob128.dtf
+case 129
+.return ob129.dtf
+case 130
+.return ob130.dtf
+case 131
+.return ob131.dtf
+case 132
+.return ob132.dtf
+case 133
+.return ob133.dtf
+case 134
+.return ob134.dtf
+case 135
+.return ob135.dtf
+case 136
+.return ob136.dtf
+case 137
+.return ob137.dtf
+case 138
+.return ob138.dtf
+case 139
+.return ob139.dtf
+case 140
+.return ob140.dtf
+case 141
+.return ob141.dtf
+case 142
+.return ob142.dtf
+case 143
+.return ob143.dtf
+case 144
+.return ob144.dtf
+case 145
+.return ob145.dtf
+case 146
+.return ob146.dtf
+case 147
+.return ob147.dtf
+case 148
+.return ob148.dtf
+case 149
+.return ob149.dtf
+case 150
+.return ob150.dtf
+case 151
+.return ob151.dtf
+case 152
+.return ob152.dtf
+case 153
+.return ob153.dtf
+case 154
+.return ob154.dtf
+case 155
+.return ob155.dtf
+case 156
+.return ob156.dtf
+case 157
+.return ob157.dtf
+case 158
+.return ob158.dtf
+case 159
+.return ob159.dtf
+case 160
+.return ob160.dtf
+case 161
+.return ob161.dtf
+case 162
+.return ob162.dtf
+case 163
+.return ob163.dtf
+case 164
+.return ob164.dtf
+case 165
+.return ob165.dtf
+case 166
+.return ob166.dtf
+case 167
+.return ob167.dtf
+case 168
+.return ob168.dtf
+case 169
+.return ob169.dtf
+case 170
+.return ob170.dtf
+case 171
+.return ob171.dtf
+case 172
+.return ob172.dtf
+case 173
+.return ob173.dtf
+case 174
+.return ob174.dtf
+case 175
+.return ob175.dtf
+case 176
+.return ob176.dtf
+case 177
+.return ob177.dtf
+case 178
+.return ob178.dtf
+case 179
+.return ob179.dtf
+case 180
+.return ob180.dtf
+case 181
+.return ob181.dtf
+case 182
+.return ob182.dtf
+case 183
+.return ob183.dtf
+case 184
+.return ob184.dtf
+case 185
+.return ob185.dtf
+case 186
+.return ob186.dtf
+case 187
+.return ob187.dtf
+case 188
+.return ob188.dtf
+case 189
+.return ob189.dtf
+case 190
+.return ob190.dtf
+case 191
+.return ob191.dtf
+case 192
+.return ob192.dtf
+case 193
+.return ob193.dtf
+case 194
+.return ob194.dtf
+case 195
+.return ob195.dtf
+case 196
+.return ob196.dtf
+case 197
+.return ob197.dtf
+case 198
+.return ob198.dtf
+case 199
+.return ob199.dtf
+case 200
+.return ob200.dtf
+case 201
+.return ob201.dtf
+case 202
+.return ob202.dtf
+case 203
+.return ob203.dtf
+case 204
+.return ob204.dtf
+case 205
+.return ob205.dtf
+case 206
+.return ob206.dtf
+case 207
+.return ob207.dtf
+case 208
+.return ob208.dtf
+case 209
+.return ob209.dtf
+case 210
+.return ob210.dtf
+case 211
+.return ob211.dtf
+case 212
+.return ob212.dtf
+case 213
+.return ob213.dtf
+case 214
+.return ob214.dtf
+case 215
+.return ob215.dtf
+case 216
+.return ob216.dtf
+case 217
+.return ob217.dtf
+case 218
+.return ob218.dtf
+case 219
+.return ob219.dtf
+case 220
+.return ob220.dtf
+case 221
+.return ob221.dtf
+case 222
+.return ob222.dtf
+case 223
+.return ob223.dtf
+case 224
+.return ob224.dtf
+case 225
+.return ob225.dtf
+case 226
+.return ob226.dtf
+case 227
+.return ob227.dtf
+case 228
+.return ob228.dtf
+case 229
+.return ob229.dtf
+case 230
+.return ob230.dtf
+case 231
+.return ob231.dtf
+case 232
+.return ob232.dtf
+case 233
+.return ob233.dtf
+case 234
+.return ob234.dtf
+case 235
+.return ob235.dtf
+case 236
+.return ob236.dtf
+case 237
+.return ob237.dtf
+case 238
+.return ob238.dtf
+case 239
+.return ob239.dtf
+case 240
+.return ob240.dtf
+case 241
+.return ob241.dtf
+case 242
+.return ob242.dtf
+case 243
+.return ob243.dtf
+case 244
+.return ob244.dtf
+case 245
+.return ob245.dtf
+case 246
+.return ob246.dtf
+case 247
+.return ob247.dtf
+case 248
+.return ob248.dtf
+case 249
+.return ob249.dtf
+case 250
+.return ob250.dtf
+case 251
+.return ob251.dtf
+case 252
+.return ob252.dtf
+case 253
+.return ob253.dtf
+case 254
+.return ob254.dtf
+case 255
+.return ob255.dtf
+case 256
+.return ob256.dtf
+case 257
+.return ob257.dtf
+case 258
+.return ob258.dtf
+case 259
+.return ob259.dtf
+case 260
+.return ob260.dtf
+case 261
+.return ob261.dtf
+case 262
+.return ob262.dtf
+case 263
+.return ob263.dtf
+case 264
+.return ob264.dtf
+case 265
+.return ob265.dtf
+case 266
+.return ob266.dtf
+case 267
+.return ob267.dtf
+case 268
+.return ob268.dtf
+case 269
+.return ob269.dtf
+case 270
+.return ob270.dtf
+case 271
+.return ob271.dtf
+case 272
+.return ob272.dtf
+case 273
+.return ob273.dtf
+case 274
+.return ob274.dtf
+case 275
+.return ob275.dtf
+case 276
+.return ob276.dtf
+case 277
+.return ob277.dtf
+case 278
+.return ob278.dtf
+case 279
+.return ob279.dtf
+case 280
+.return ob280.dtf
+}
+
+.varfree G0_count
+.varfree G0_total
+.varfree G1_count
+.varfree G1_total
+.varfree G2_count
+.varfree G2_total
+.varfree G3_count
+.varfree G3_total
+.varfree G4_count
+.varfree G4_total
+.varfree HG_count
+.varfree HG_total
+.varfree RW_count
+.varfree RW_total
+.varfree HQ_count
+.varfree HQ_total
+.varfree TW_count
+.varfree TW_total
+.varfree TX_count
+.varfree TX_total
+.varfree BO_count
+.varfree BO_total
+.varfree BE_count
+.varfree BE_total
+.varfree CB_count
+.varfree CB_total
+.varfree BB_count
+.varfree BB_total
+.varfree ST_count
+.varfree ST_total
+.varfree RD_count
+.varfree RD_total
+.varfree C0_count
+.varfree C0_total
+.varfree C1_count
+.varfree C1_total
+.varfree AS_count
+.varfree AS_total
+.varfree FM_count
+.varfree FM_total
+.varfree LM_count
+.varfree LM_total
+.varfree DM_count
+.varfree DM_total
+.varfree SM_count
+.varfree SM_total
+.varfree CM_count
+.varfree CM_total
+.varfree WM_count
+.varfree WM_total
+.varfree PL_count
+.varfree PL_total
+.varfree X?_count
+.varfree X?_total
+.varfree PA_count
+.varfree PA_total
+.varfree A0_count
+.varfree A0_total
+.varfree A1_count
+.varfree A1_total
+.varfree A2_count
+.varfree A2_total
+.varfree FD_count
+.varfree FD_total
+.varfree RS_count
+.varfree RS_total
+.varfree WH_count
+.varfree WH_total
+.varfree AD_count
+.varfree AD_total
+.varfree HT_count
+.varfree HT_total
+.varfree HS_count
+.varfree HS_total
+.varfree RK_count
+.varfree RK_total
+.varfree TR_count
+.varfree TR_total
+.varfree B1_count
+.varfree B1_total
+.varfree G5_count
+.varfree G5_total
+.varfree G6_count
+.varfree G6_total
+.varfree EA_count
+.varfree EA_total
+.varfree EB_count
+.varfree EB_total
+.varfree EC_count
+.varfree EC_total
+.varfree ED_count
+.varfree ED_total
+.varfree EE_count
+.varfree EE_total
+.varfree EF_count
+.varfree EF_total
+.varfree EG_count
+.varfree EG_total
+.varfree EH_count
+.varfree EH_total
+.varfree EI_count
+.varfree EI_total
+.varfree EJ_count
+.varfree EJ_total
+.varfree EK_count
+.varfree EK_total
+.varfree EL_count
+.varfree EL_total
+.varfree EM_count
+.varfree EM_total
+.varfree EN_count
+.varfree EN_total
+.varfree EO_count
+.varfree EO_total
+.varfree EP_count
+.varfree EP_total
+.varfree EQ_count
+.varfree EQ_total
+.varfree ER_count
+.varfree ER_total
+.varfree ES_count
+.varfree ES_total
+.varfree ET_count
+.varfree ET_total
+.varfree EU_count
+.varfree EU_total
+.varfree EV_count
+.varfree EV_total
+.varfree EW_count
+.varfree EW_total
+.varfree EX_count
+.varfree EX_total
+.varfree EY_count
+.varfree EY_total
+.varfree G7_count
+.varfree G7_total
+.varfree G8_count
+.varfree G8_total
+.varfree G9_count
+.varfree G9_total
+.varfree GA_count
+.varfree GA_total
+.varfree GB_count
+.varfree GB_total
+
+%

@@ -1,0 +1,154 @@
+# ----- DAR Circles
+.mapclear
+
+# --- Define constants
+.strsto red 255 0 0 255
+
+.strsto blue 0 0 255 255
+
+.strsto green 0 255 0 255
+
+.strsto white 255 255 255 255
+.strsto orange 255 165 0 255
+
+
+.strsto gray 128 128 128 128
+.strsto magenta 212 42 200 255
+.strsto cyan 56 252 239 255
+
+
+
+
+
+# ---- Define England bases
+.strsto F1 273929 1235550
+.strsto F102 196366 1216385
+.strsto F103 256626 1182826
+.strsto F104 265545 1127800
+.strsto F105 313127 1177139
+.strsto F106 369940 1236144
+.strsto F107 393295 1339872
+.strsto F108 229145 1389607
+.strsto F109 193169 1557849
+.strsto F110 69890 1684478
+.strsto F6 185043 1293736
+.strsto F101 166674 1161932
+.strsto F100 94714 1157618
+.strsto F5 147966 1075193
+.strsto F8 200959 1059953
+.strsto F2 333593 1062236
+.strsto F99 310050 1018008
+.strsto F7 185944 967186
+.strsto F98 38869 986585
+#
+# ---- Define Berlin bases and targets
+.strsto F84 1872779 1304173
+.strsto F87 2069204 1545879
+.strsto F91 1800481 1425615
+.strsto F92 1804269 1319957
+.strsto F93 1928861 1398729
+.strsto F94 2060927 1340667
+.strsto T28 1764275 1449765
+.strsto T31 2054713 1416954
+.strsto T32 1994846 1382125
+.strsto T33 1991381 1366461
+.strsto T36 1994397 1353864
+.strsto T39 1873390 1289531
+.strsto T40 1857985 1265537
+.strsto T34 2006513 1363088
+.strsto T35 2030779 1360199
+.strsto T37 2074600 1316234
+.strsto T38 2094523 1300774
+.strsto F64 2072100 1281175
+.strsto C96 2009717 1313092
+.strsto F61 1740462 1151590	
+.strsto C40 841230 1262665
+#
+#
+#
+# ---- Define Buff Group #1 Route
+.strsto wp1 69890 1268478
+#
+# ---- Draw Buff Group #1 Route
+#
+ 
+.mapcolor @green@
+.mapline @F110@ @wp1@
+.mapline @wp1@ @C96@
+
+#
+#.mapcolor @orange@
+
+#.mapcircle 1991381 1383545 17084
+#.strsto wp8 1989069 1400472
+#.strsto wp9 1349322 1313092
+#.mapline @wp8@ @wp9@
+#.strsto wp11 1349322 1313092
+#.mapline @wp11@ @wp7@
+#.mapline @C96@ @wp11@
+
+#
+.mapcolor @white@
+.mapworldtext @wp1@ WP1
+.mapworldtext @C96@ Berlin
+
+# Merge Points
+.strsto m1 134550.9 1269965.133
+.strsto m2 199211.8 1271452.267
+.strsto m3 263872.7 1272939.4
+.strsto m4 328533.6 1274426.533
+.strsto m5 393194.5 1275913.667
+.strsto m6 457855.4 1277400.8
+.strsto m7 522516.3 1278887.933
+.strsto m8 587177.2 1280375.067
+.strsto m9 651838.1 1281862.2
+.strsto m10 716499 1283349.333
+.strsto m11 781159.9 1284836.467
+.strsto m12 845820.8 1286323.6
+.strsto m13 910481.7 1287810.733
+.strsto m14 975142.6 1289297.867
+.strsto m15 1039803.5 1290785
+.strsto m16 1104464.4 1292272.133
+.strsto m17 1169125.3 1293759.267
+.strsto m18 1233786.2 1295246.4
+.strsto m19 1298447.1 1296733.533
+.strsto m20 1363108 1298220.667
+.strsto m21 1427768.9 1299707.8
+.strsto m22 1492429.8 1301194.933
+.strsto m23 1557090.7 1302682.067
+.strsto m24 1621751.6 1304169.2
+.strsto m25 1686412.5 1305656.333
+.strsto m26 1751073.4 1307143.467
+.strsto m27 1815734.3 1308630.6
+.strsto m28 1880395.2 1310117.733
+.strsto m29 1945056.1 1311604.867
+
+.mapworldtext @m1@ m1
+.mapworldtext @m2@ m2
+.mapworldtext @m3@ m3
+.mapworldtext @m4@ m4
+.mapworldtext @m5@ m5
+.mapworldtext @m6@ m6
+.mapworldtext @m7@ m7
+.mapworldtext @m8@ m8
+.mapworldtext @m9@ m9
+.mapworldtext @m10@ m10
+.mapworldtext @m11@ m11
+.mapworldtext @m12@ m12
+.mapworldtext @m13@ m13
+.mapworldtext @m14@ m14
+.mapworldtext @m15@ m15
+.mapworldtext @m16@ m16
+.mapworldtext @m17@ m17
+.mapworldtext @m18@ m18
+.mapworldtext @m19@ m19
+.mapworldtext @m20@ m20
+.mapworldtext @m21@ m21
+.mapworldtext @m22@ m22
+.mapworldtext @m23@ m23
+.mapworldtext @m24@ m24
+.mapworldtext @m25@ m25
+.mapworldtext @m26@ m26
+.mapworldtext @m27@ m27
+.mapworldtext @m28@ m28
+.mapworldtext @m29@ m29

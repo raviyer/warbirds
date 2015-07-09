@@ -1,0 +1,12 @@
+.vargetint fn "Please enter field number"
+%%
+if (INTRCL("fn") > 99)
+{
+.strsto fs=F0@fn@:
+}
+else
+{
+.strsto fs=F@fn@:
+}
+%%
+.echo @fs@

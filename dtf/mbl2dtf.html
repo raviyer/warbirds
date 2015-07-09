@@ -1,0 +1,100 @@
+<!-- copyright (c) noflyz 2014 raviyer@yahoo.com -->
+<!--
+    This file is part of MBL2DTF - 
+
+    MBL2DTF is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    MBL2DTF is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with MBL2DTF.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>DTF Editor</title>
+    <script src="mbl2dtf.js"></script>
+  </head>
+  <body onload="javascript:init()">
+    <div id="topdiv">
+      <div id="select-terrain">
+	<h1>MBL to DTF Converter</h1>
+	<b>Please Select a Terrain to work with: </b>
+	<select id="terrain"></select>
+      </div>
+      <div id="texts">
+	<b><p>Copy all the text from your .mbl file here:</p></b>
+	<textarea id="mbl" rows="10" cols="60"></textarea>
+	  <b><p>Copy all the text from  here to a dtf file:</p></b>
+	  <textarea id="dtf" readonly=true cols="60" rows="5"></textarea>
+      </div>
+      <div id="controls">
+	<b> Select the style for your DTF </b></br>
+	<input type="radio" name="dtftype" value="linear" checked>
+	  <b>Linear</b></input> 
+	- Select this to make a replica of the MBL</br>
+	<input type="radio" name="dtftype" value="bezier"><b>Bezier</b></input> 
+	- Render a Bezier curve from the 
+	first to the last point, using all intermediate points as control 
+	points.</br>
+	<input type="checkbox" id="show-cp"</input>Display Control Points</br>
+	<input type="radio" name="dtftype" value="lagrange">
+	  <b>La Grange</b></input> 
+	- Render a La Grange interpolated curve that passes through all the
+	points. Note that for this to work correctly your MBL line should 
+	never loop back. i.e. it only works for lines that go from left to 
+	right or right to left.</br>
+	  <b>Options:</b></br>
+	  <input type="checkbox" id="draw-arrow"></input> Draw Arrows
+	  <input type="checkbox" id="limit-curve"></input> Limit curves to 
+	  <input type="text" size="3" max="100" 
+	    id="curve-limit" value="100"></input>
+	  segments (Max 100) </br>
+	  <input type="checkbox" id="show-distance"></input> 
+	  Show Distance - Every 
+	  <input type="text" id="distance-distance" max="500" size="3"
+	    value="0">
+	  </input> miles. (Default of 0 means show data at all direction 
+	  changes)
+	    <p>Hit Convert when ready</p>
+	    <input type="button" name="Ok" value="Convert" id="render"></input>
+      </div>
+
+      <div id="container" class="wrapper" width="1024", height="1024">
+	<canvas id="map" width="1024" height="1024">
+	  No Canvas Support
+	</canvas>
+      </div>
+      <div id="credits">
+	<hr>
+	  <address><a href="mailto:raviyer@yahoo.com">&copy; Noflyz</a></address>
+	  <!-- Created: Sat Dec 28 14:17:16 PST 2013 -->
+	  <!-- hhmts start -->
+Last modified: Fri Feb  6 23:18:08 PST 2015
+<!-- hhmts end -->
+      </div>
+      <style type="text/css">
+	#select-terrain { background-color:rgb(149,125,0); 
+	width:1024px; position:relative;}
+	#texts { float: left; width:512px; background-color:rgb(149,145,32);
+	height:340px;}
+	#controls { float: left; width:512px; background-color:rgb(149,145,32);
+	height:340px;}
+	#container { clear: both; position: relative; height:1024px;}
+	#map{ position: absolute; top : 0; left : 0; }
+	#tmpcnvs{ position: absolute; top : 0; left : 0;}
+
+	#credits { clear: both; position : relative;}
+      </style>
+
+    </div>
+  </body>
+  
+</html>

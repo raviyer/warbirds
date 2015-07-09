@@ -1,0 +1,444 @@
+Code
+Name
+Damage
+Arena OT Class Listing in .show
+Close Field
+Description
+G0
+88Flack
+500
+0 otOT_88_FLACK Runway gun or 88 Flack
+N
+Large flak gun in sandbag ring.
+G1
+MG
+200
+1 otOT_RUNWAY_GUN Aircraft factory gun
+N
+Twin MG position with man.
+G2
+20mm
+200
+2 otOT_FUEL_FACTORY_GUN Fuel factory gun
+N
+Small flak position in dirt ring OR medium sandbag ring with MG and man.
+G3
+40mm
+300
+3 otOT_MUNITION_FACTORY_GUN Munition factory gun
+N
+Medium flak postion in dirt ring OR large sandbag ring with wheeled gun.
+G4
+HQGun
+500
+4 otOT_HQ_GUN HQ gun
+Y
+Camo Arty Ring Position with special significance.
+HG
+Hanger
+2500
+5 otOT_HANGER Hangar
+Y
+Airfield Structures of various types and sizes to house aircraft.
+RW
+Runway
+20000
+6 otOT_RUNWAY Runway
+N
+Ground texture representing base layer of airfields and towns.
+HQ
+HQ
+2000
+7 otOT_HQ HQ (head quarters)
+Y
+Any building with special significance.
+TW
+Tower
+2000
+8 otOT_TOWER Tower
+N
+Control object for each field of various types, needed for capture.
+TX
+TaxiWay
+8000
+9 otOT_TAXY_WAY Taxi way
+N
+Ground texture representing a specific base area of airfields and towns.
+BO
+Unit
+100
+10 otOT_BOMBABLE_OBJECT Bombable object
+N
+Any small unimportant structure not necessary for base closure.
+BE
+BoatEntry
+20000
+11 otOT_BOAT_ENTRY Boat entry
+N
+Any very large structure not necessary for base closure.
+CB
+Carrier
+250
+12 otOT_CARRIER Carrier
+Y
+Trucks and M5 HTs - carrier of supplies and troops.
+BB
+Boat
+1000
+13 otOT_BOMBABLE_BOAT Bombable boat
+Y
+Vic56 small coastal boat
+ST
+Strat
+10000
+14 otOT_STRAT_OBJECT Strat object
+N
+Not in use - possible special strategic target
+RD
+RadarEm
+2000
+15 otOT_RADAR_EMITTER Radar emitter
+Y
+Square radar mast or circular listening dish - determines radar ingame.
+C0
+ReadyRoom
+1250
+16 otOT_READY_ROOM Ready room
+Y
+Squadron assembly room at airfields
+C1
+Capital
+2000
+17 otOT_CAPITAL Capital
+Y
+DD1 or DD2 Destroyer - capital ship
+AS
+Asteroid
+500
+18 otOT_ASTERIOD Asteroid
+Y
+Barrage or Observation Balloons
+FM
+FacMod
+4000
+19 otOT_FACTORY_MODULE Factory module
+Y
+Various medium-sized associated factory buildings.
+LM
+LivMod
+2000
+20 otOT_LIVING_MODULE Living module
+Y
+Various large housing developments at industry and urban areas.
+DM
+Dock
+1000
+21 otOT_DOCKING_MODULE Docking module
+Y
+Wood dock or steel bridge span
+SM
+Struct
+500
+22 otOT_STRUCTURE_MODULE Structure module
+Y
+Any small structure necessary for base closure.
+CM
+Cargo
+1500
+23 otOT_CARGO_MODULE Cargo module
+Y
+Freighter - cargo ship
+WM
+Weapon
+750
+24 otOT_WEAPONS_MODULE Weapons module
+Y
+Tanks, M16s or M3s - armoured weapons
+PL
+Planet
+50000
+25 otOT_PLANET Planet
+N
+Not in use - possible terrain object indestructable
+X?
+Link
+100
+26 otOT_LINK Link
+N
+Not in use - possible communication link between fields
+PA
+ParkedAC
+350
+27 otOT_PARKED_AIRCRAFT Parked Aircraft
+Y
+Parked a/c types - various types specific to terrains.
+A0
+Arty0
+500
+28 otOT_ARTILLERY0 Artillery Type 0
+Y
+Camo Arty Ring Position representing field artillery(up to 105mm)
+A1
+Arty1
+700
+29 otOT_ARTILLERY1 Artillery Type 1
+Y
+Camo Arty Ring Position representing heavy artillery(above 105mm)
+A2
+Arty2
+1000
+30 otOT_ARTILLERY2 Artillery Type 2
+Y
+Camo Arty Ring Position representing coastal artillery(above 200mm)
+FD
+FuelDmp
+500
+31 otOT_FUEL_DUMP Fuel Dump
+Y
+Small fuel tanks at airfields and other locations.
+RS
+RadarStn
+1500
+32 otOT_RADAR_STATION Radar Station
+Y
+Radar control building with mast - does not determine radar ingame.
+WH
+Warehouse
+2000
+33 otOT_WAREHOUSE Warehouse
+Y
+Various large buildings that store goods at all locations.
+AD
+AmmoDump
+1250
+34 otOT_AMMO_DUMP Ammunition Dump
+Y
+Various fortified ammunition storage bunkers at airfields and tactical positions.
+HT
+Hut
+600
+35 otOT_HUT Hut/Tent
+Y
+Tent and tent hangars.
+HS
+House
+800
+36 otOT_HOUSE House
+Y
+Various small general structures at all locations.
+RK
+Rock
+500
+37 otOT_ROCK Rock
+Y
+Stone bridge span OR similar stone structure like walls.
+TR
+Tree
+200
+38 otOT_TREE Tree
+N
+Tree object - different than tree clutter objects
+B1
+Bridge
+20000
+39 otOT_BRIDGE
+N
+Port base object - TERRAIN SPECIFIC
+G5
+37mm-AT
+300
+40 otOT_ANTITANK_1
+Y
+Large sandbag ring with wheeled gun.
+G6
+75mm-AT
+400
+41 otOT_ANTITANK_2
+Y
+Camo Arty Ring Position representing large AT guns.
+EA
+Factory
+3000
+42 otOT_FACTORY Factory
+Y
+Various large factory buildings at industry locations.
+EB
+FactComplex
+5000
+43 otOT_FACTCOMPLEX FactComplex
+Y
+Very large factory building at industry locations.
+EC
+FactAvionics
+3000
+44 otOT_FACTAVIONICS FactAvionics
+Y
+Large peaked factory building at industry locations.
+ED
+FactBall1
+3000
+45 otOT_FACTBALL FactBall1
+Y
+Medium factory building at industry locations.
+EE
+FactBall2
+4000
+46 otOT_FACTBALL2 FactBall2
+Y
+Large factory building at industry locations.
+EF
+Warehouse2
+3000
+47 otOT_WAREHOUSE2 Warehouse2
+Y
+Various very large buildings that store goods at major locations.
+EG
+Crane
+1000
+48 otOT_CRANE Crane
+Y
+Cranes at ports, industry and railway yards - two types.
+EH
+Pontoon
+300
+49 otOT_PONTOON Pontoon
+Y
+Pontoon bridge span
+EI
+ReFinBuild1
+4000
+50 otOT_REFINBUILD1 ReFinBuild1
+Y
+Medium refinery building at industry locations.
+EJ
+RefFinSep
+700
+51 otOT_REFINSTEP RefFinSep
+Y
+Oil industry refinery seperation tower.
+EK
+ReFinTank
+1250
+52 otOT_REFINTANK ReFinTank
+Y
+Large fuel tanks at industry and port locations.
+EL
+RefinPipe
+700
+53 otOT_REFINPIPE RefinPipe
+Y
+Industry smoke stack - all industry types
+EM
+Power1
+1000
+54 otOT_POWER1 Power1
+Y
+Small power generator building at industry locations.
+EN
+Power2
+1500
+55 otOT_POWER2 Power2
+Y
+Medium power generator building at industry locations.
+EO
+Power3
+2000
+56 otOT_POWER3 Power3
+Y
+Large power generator building at industry locations.
+EP
+Uboat
+1000
+57 otOT_UBOAT Uboat
+Y
+Not in use - possible submarine target
+EQ
+Gas1
+750
+58 otOT_GAS1 Gas1
+Y
+Medium sized fuel tanks at industry locations.
+ER
+Subpen
+3000
+59 otOT_SUBPEN Subpen
+Y
+Large concrete sub hangars at ports OR dam sections across rivers.
+ES
+ObsCnCr
+1000
+60 otOT_OBSCNCR ObsCnCr
+Y
+Observation Control Center - control bunker in fortified defenses.
+ET
+Barracks01
+2000
+61 otOT_BARRACKS01 Barracks01
+Y
+Various large buildings that house troops at airfields, bases and ports.
+EU
+Bunker
+1500
+62 otOT_BUNKER Bunker
+Y
+Various small fortified buildings at airfields or tactical postions.
+EV
+LightTower
+1000
+63 otOT_LIGHTTOWER LightTower
+Y
+Coastal lighthouse - on coastlines and at seaports.
+EW
+CntrlRail
+1500
+64 otOT_CNTRLRAIL CntrlRail
+Y
+Railway platform for passenger trains.
+EX
+MLine1
+2000
+65 otOT_MLINE1 MLine1
+Y
+Small concrete blockhouse with MG turrets - in fortified areas.
+EY
+MLine2
+3000
+66 otOT_MLINE2 MLine2
+Y
+Large concrete blockhouse with gun turrets - in fortified areas.
+G7
+DOAFlack
+500
+67 otOT_DOA_FLACK
+N
+DOA specific
+G8
+BritRifle
+10
+68 otOT_BRITRIFLE
+N
+DOA specific
+G9
+GermRifle
+10
+69 otOT_GERMRIFLE
+N
+DOA specific
+GA
+TrenchMG
+200
+70 otOT_TRENCHMG
+N
+DOA specific
+GB
+AAAMG
+200
+71 otOT_AAAMG
+N
+DOA specific
+00
+AICollide
+20000
+72 otOT_AITERRCOLLIDE
+N
+Not in use

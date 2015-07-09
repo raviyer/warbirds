@@ -1,0 +1,56 @@
+<!--
+This file is part of Warbirds BDA Script Generator.
+
+    Foobar is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Warbirds BDA Script Generator is distributed in the hope that it will 
+    be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
+
+(c) Noflyz - United Mud Movers - noflyz.wix.com/united-mud-movers
+-->
+
+<div class="container">
+    <span class="col-md-2">Type: <select ng-options="c.name for c in assetCtrl.assets" ng-model="assetCtrl.sel"></select></span>
+    <span class="col-md-2">How Many: <select ng-options="n for n in assetCtrl.numbers" ng-model="assetCtrl.selNo"></select></span>
+    <span class="col-md-2">Start At: <select ng-options="n for n in assetCtrl.numbers" ng-model="assetCtrl.startNo"></select></span>
+    <button type="submit" class="btn btn-default" ng-click="assetCtrl.add_asset()">+</button>
+</div>
+<div class="container">
+    <span class="col-md-4"><label>{{assetCtrl.sel.description}}</label></span>
+</div>
+<div class="container">
+    Enter Field Number: <input type="number" ng-model="assetCtrl.fieldNum" ng-change="assetCtrl.gen_dtf()"></input>
+</div>
+<div class="container">
+    <table class="table table-striped table-condensed">
+      <tr>
+	<th>code</th>
+	<th>description</th>
+	<th>Start At</th>
+	<th>Number</th>
+	<th>-</th>
+      </tr>
+      <tr ng-repeat="(k,v) in assetCtrl.needed">
+	<td>{{k}}</td>
+	<td>{{v[0]}}</td>
+	<td>{{v[1]}}</td>
+	<td>{{v[2]}}</td>
+	<td><button type="submit" class="btn btn-default" 
+	    ng-click="assetCtrl.remove_asset(k)">-</button></td>
+      </td>
+    </table>
+</div>
+<div>
+    Cut and paste the below to a text file (Include all lines including the %%s): Name the file accordingly, e.g. if this is for field 32 you might name it F32bda.dtf. You can then bring it up in warbirds by typing .dotfile F32bda
+    <pre>
+{{assetCtrl.dtf}}
+    </pre>
+</div>

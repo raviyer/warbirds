@@ -1,0 +1,7 @@
+
+%%
+.vargetint fn "Please enter field number"
+%s
+%s
+%s
+%%

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>DTF Editor</title>
+    <script src="new_dtf.js"></script>
+  </head>
+
+  <body onload="javascript:init()">
+    <h1>MBL to DTF Converter</h1>
+
+    <style type="text/css">
+      .wrapper { position: relative;}
+      .wrapper canvas { position: absolute; top : 0; left : 0;}
+      p { position : relative; }
+    </style>
+    <p>Please Select a Terrain to work with: <select id="terrain"></select></p>
+    <p>Copy all the text from your .mbl file here:</p>
+    <p>
+      <textarea id="mbl">
+      </textarea>
+    </p>
+    <p> Select the style for your DTF </p>
+    <input type="radio" name="dtftype" value="asis">Linex</input>
+    <input type="radio" name="dtftype" value="bezier curve">Bezier</input>
+    <input type="radio" name="dtftype" value="La Grange curve">La Grange</input>
+    <p>Hit Convert when ready</p>
+    <input type="button" name="Ok" value="Convert"></input>
+    <p>Copy all the text from  here to a dtf file:</p>
+    <p>
+      <textarea id="dtf">
+      </textarea>
+    </p>
+
+
+    <p>
+      <div id="container" class="wrapper" width="1024", height="1024">
+	<canvas id="map" width="1024" height="1024">
+	  No Canvas Support
+	</canvas>
+      </div>
+    </p>
+    <hr>
+      <address><a href="mailto:bom@foursquare">U-foursquare\bom</a></address>
+      <!-- Created: Sat Dec 28 14:17:16 PST 2013 -->
+      <!-- hhmts start -->
+Last modified: Mon Dec 30 00:17:14 PST 2013
+<!-- hhmts end -->
+  </body>
+</html>

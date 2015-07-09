@@ -1,0 +1,138 @@
+# ----- DAR Circles
+.mapclear
+
+# --- Define constants
+.strsto red 255 0 0 255
+
+.strsto blue 0 0 255 255
+
+.strsto green 0 255 0 255
+
+.strsto white 255 255 255 255
+.strsto orange 255 165 0 255
+
+
+# ---- Define England bases
+.strsto F1 273929 1235550
+.strsto F102 196366 1216385
+.strsto F103 256626 1182826
+.strsto F104 265545 1127800
+.strsto F105 313127 1177139
+.strsto F106 369940 1236144
+.strsto F107 393295 1339872
+.strsto F108 229145 1389607
+.strsto F109 193169 1557849
+.strsto F110 69890 1684478
+.strsto F6 185043 1293736
+.strsto F101 166674 1161932
+.strsto F100 94714 1157618
+.strsto F5 147966 1075193
+.strsto F8 200959 1059953
+.strsto F2 333593 1062236
+.strsto F99 310050 1018008
+.strsto F7 185944 967186
+.strsto F98 38869 986585
+#
+# ---- Define Berlin bases and targets
+.strsto F84 1872779 1304173
+.strsto F87 2069204 1545879
+.strsto F91 1800481 1425615
+.strsto F92 1804269 1319957
+.strsto F93 1928861 1398729
+.strsto F94 2060927 1340667
+.strsto T28 1764275 1449765
+.strsto T31 2054713 1416954
+.strsto T32 1994846 1382125
+.strsto T33 1991381 1366461
+.strsto T36 1994397 1353864
+.strsto T39 1873390 1289531
+.strsto T40 1857985 1265537
+.strsto T34 2006513 1363088
+.strsto T35 2030779 1360199
+.strsto T37 2074600 1316234
+.strsto T38 2094523 1300774
+.strsto F64 2072100 1281175
+.strsto C96 2009717 1313092
+.strsto F61 1740462 1151590	
+.strsto C40 841230 1262665
+#
+#--------------
+#
+# ---- Define Buff Group #1 Route
+.strsto wp1 113191 1709478
+.strsto wp2 705991 1709478
+.strsto wp3 1216827 1440913
+.strsto wp4 1403198 1440913
+.strsto wp5 1477650 1366461
+.strsto wp6 1956250 1493412
+.strsto wp7 1655382 1313092
+#
+# ---- Draw Buff Group #1 Route
+#
+ 
+.mapcolor @red@
+
+.mapcircle @F110@ 200
+.mapline @F110@ @wp1@
+
+.mapline @wp1@ @wp2@
+.mapline @wp2@ @wp3@
+.mapline @wp3@ @wp4@
+.mapline @wp4@ @wp5@
+.mapline @wp5@ @T33@
+#
+.mapcolor @orange@
+
+.mapcircle 1991381 1434797 68336
+.mapline @wp6@ @wp7@
+#
+.mapcolor @white@
+.mapworldtext @wp1@ WP1
+.mapworldtext @wp2@ WP2
+.mapworldtext @wp3@ WP3
+.mapworldtext @wp4@ WP4
+.mapworldtext @wp5@ WP5
+.mapworldtext @wp6@ WP6
+.mapworldtext @wp7@ WP7
+#
+# ---- Define Buff Group #2 Route
+.strsto wp21 228344 1318736
+.strsto wp22 228344 1370736
+.strsto wp23 465390 1699478
+.strsto wp24 703522 1699478
+.strsto wp25 1178501 1449765
+.strsto wp26 1764275 1313092
+.strsto wp27 369940 1313092
+#
+# ---- Draw Buff Group #2 Route
+#
+ 
+.mapcolor @green@
+
+.mapcircle @F6@ 200
+.mapline @F6@ @wp21@
+.mapline @wp21@ @wp22@
+.mapline @wp22@ @wp23@
+.mapline @wp23@ @wp24@
+.mapline @wp24@ @wp25@
+.mapline @wp25@ @T28@
+#
+.mapcolor @orange@
+
+.mapcircle 1764275 1381428 68336
+.mapline @wp26@ @wp27@
+#
+#
+.mapcolor @white@
+.mapworldtext @wp21@ WP21
+.mapworldtext @wp22@ WP22
+.mapworldtext @wp23@ WP23
+.mapworldtext @wp24@ WP24
+.mapworldtext @wp25@ WP25
+.mapworldtext @wp26@ WP26
+.mapworldtext @wp27@ WP27
+
+
+
+
+

@@ -1,0 +1,15 @@
+Sicily Terrain:
+===============
+310 Miles by 310 Miles.
+
+0 x 0 is at 51150' (9.6875 miles)
+Each grid is 153450' (29.0625 miles)
+
+
+Mount Etna - Alt as shown: 12237 feet grid 1424800 1182214
+	     Wikipedia: http://en.wikipedia.org/wiki/Mount_Etna
+			3,350 m (10,990 ft), (varies w/ volcanic activity
+					      but not by much)
+
+
+

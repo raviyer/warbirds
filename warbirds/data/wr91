@@ -1,0 +1,331 @@
+
+%
+.intsto PA_count 0
+.intsto FD_count 0
+.intsto AD_count 0
+.intsto G1_count 0
+.intsto G0_count 0
+.intsto HS_count 0
+.intsto HQ_count 0
+.intsto G3_count 0
+.intsto HG_count 0
+.intsto G2_count 0
+
+if (DESTROYED(GROUNDOBJECT("F091PA001")))
+{
+.intadd PA_count 0
+}
+else
+{
+.intadd PA_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091PA002")))
+{
+.intadd PA_count 0
+}
+else
+{
+.intadd PA_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091PA003")))
+{
+.intadd PA_count 0
+}
+else
+{
+.intadd PA_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091FD001")))
+{
+.intadd FD_count 0
+}
+else
+{
+.intadd FD_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091FD002")))
+{
+.intadd FD_count 0
+}
+else
+{
+.intadd FD_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091FD003")))
+{
+.intadd FD_count 0
+}
+else
+{
+.intadd FD_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091FD004")))
+{
+.intadd FD_count 0
+}
+else
+{
+.intadd FD_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091AD001")))
+{
+.intadd AD_count 0
+}
+else
+{
+.intadd AD_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091AD002")))
+{
+.intadd AD_count 0
+}
+else
+{
+.intadd AD_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091AD003")))
+{
+.intadd AD_count 0
+}
+else
+{
+.intadd AD_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091AD004")))
+{
+.intadd AD_count 0
+}
+else
+{
+.intadd AD_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091G1001")))
+{
+.intadd G1_count 0
+}
+else
+{
+.intadd G1_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091G0001")))
+{
+.intadd G0_count 0
+}
+else
+{
+.intadd G0_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091G0002")))
+{
+.intadd G0_count 0
+}
+else
+{
+.intadd G0_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091HS001")))
+{
+.intadd HS_count 0
+}
+else
+{
+.intadd HS_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091HS002")))
+{
+.intadd HS_count 0
+}
+else
+{
+.intadd HS_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091HS003")))
+{
+.intadd HS_count 0
+}
+else
+{
+.intadd HS_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091HS004")))
+{
+.intadd HS_count 0
+}
+else
+{
+.intadd HS_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091HS005")))
+{
+.intadd HS_count 0
+}
+else
+{
+.intadd HS_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091HS006")))
+{
+.intadd HS_count 0
+}
+else
+{
+.intadd HS_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091HS007")))
+{
+.intadd HS_count 0
+}
+else
+{
+.intadd HS_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091HS008")))
+{
+.intadd HS_count 0
+}
+else
+{
+.intadd HS_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091HS009")))
+{
+.intadd HS_count 0
+}
+else
+{
+.intadd HS_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091HS010")))
+{
+.intadd HS_count 0
+}
+else
+{
+.intadd HS_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091HS011")))
+{
+.intadd HS_count 0
+}
+else
+{
+.intadd HS_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091HS012")))
+{
+.intadd HS_count 0
+}
+else
+{
+.intadd HS_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091HQ001")))
+{
+.intadd HQ_count 0
+}
+else
+{
+.intadd HQ_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091G3001")))
+{
+.intadd G3_count 0
+}
+else
+{
+.intadd G3_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091HG001")))
+{
+.intadd HG_count 0
+}
+else
+{
+.intadd HG_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091HG002")))
+{
+.intadd HG_count 0
+}
+else
+{
+.intadd HG_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091HG003")))
+{
+.intadd HG_count 0
+}
+else
+{
+.intadd HG_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091G2001")))
+{
+.intadd G2_count 0
+}
+else
+{
+.intadd G2_count 1
+}
+if (DESTROYED(GROUNDOBJECT("F091G2002")))
+{
+.intadd G2_count 0
+}
+else
+{
+.intadd G2_count 1
+}
+
+if (@PA_count@ > 0)
+{
+.echo @PA_count@ PA Parked a/c types - various types specific to terrains. remain
+}
+if (@FD_count@ > 0)
+{
+.echo @FD_count@ FD Small fuel tanks at airfields and other locations. remain
+}
+if (@AD_count@ > 0)
+{
+.echo @AD_count@ AD Various fortified ammunition storage bunkers at airfields and tactical positions. remain
+}
+if (@G1_count@ > 0)
+{
+.echo @G1_count@ G1 Twin MG position with man. remain
+}
+if (@G0_count@ > 0)
+{
+.echo @G0_count@ G0 Large flak gun in sandbag ring. remain
+}
+if (@HS_count@ > 0)
+{
+.echo @HS_count@ HS Various small general structures at all locations. remain
+}
+if (@HQ_count@ > 0)
+{
+.echo @HQ_count@ HQ Any building with special significance. remain
+}
+if (@G3_count@ > 0)
+{
+.echo @G3_count@ G3 Medium flak postion in dirt ring OR large sandbag ring with wheeled gun. remain
+}
+if (@HG_count@ > 0)
+{
+.echo @HG_count@ HG Airfield Structures of various types and sizes to house aircraft. remain
+}
+if (@G2_count@ > 0)
+{
+.echo @G2_count@ G2 Small flak position in dirt ring OR medium sandbag ring with MG and man. remain
+}
+
+.varfree PA_count
+.varfree FD_count
+.varfree AD_count
+.varfree G1_count
+.varfree G0_count
+.varfree HS_count
+.varfree HQ_count
+.varfree G3_count
+.varfree HG_count
+.varfree G2_count
+
+%

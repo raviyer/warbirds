@@ -1,0 +1,132 @@
+<!-- copyright noflyz raviyer@yahoo.com -->
+<!--
+    This file is part of Interesting DTF Creator
+
+    Interesting DTF Creator is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Interesting DTF Creator is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Interesting DTF Creator.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Create Interesting DTFs</title>
+    <script src="dtf.js"></script>
+  </head>
+
+  <body onload="initForms()">
+    <form id=fields>
+    <h1>Create Interesting DTFs</h1>
+    <h2>Points of interest</h2><p>enter field, dar and way points by clicking on the map some place. Give the POI a name, I suggest you name fields like f28, dars as dar28 and waypoints as wp1 etc. If you want a circle around one of the points simply check the box next to it in the table below, give it a radius in miles and select the color you would like</p>
+    <div style="height:1024px;width:1024px;background-image:url('tunisia.png')" id=map_div onclick=addPoi(event)><img height=1024 width=1024  src=tunisia.png></div>
+    <table border=1 id="pois" width=40%>
+      <tr><th>Name</th><th>X pos</th><th>Y pos</th><th>Circle?</th><th>Radius in miles</th><th>Color</th></tr>
+      <tr>
+	  <td><input name="fn" size=4></td>
+	  <td><input name="fx" size=7></td>
+	  <td><input name="fy" size=7></td>
+	  <td><input type=checkbox name="fc">
+	  <td><input name="fr" size=3></td>
+	  <td><select name=fco>
+		<option>red
+		<option>blue
+		<option>green
+		<option>white
+		<option>black
+	      </select>
+	  </td>
+	  <td><button type=button id=del onclick="removearow('pois', this,2)">X</button></td>
+      </tr>
+    </table>
+    <button type=button id=addpoi onclick="addarow('pois',1)">Add point of interest</button>
+
+
+    <h2>Lines and Curves</h2> <p>enter start and end points for the line or curve, 
+	you can either enter x,y coords or names of points of interest above (enter the name in the startX and endX boxes and leave the Y values blank), Curves also require two
+	controling points, the curve will not pass the points but go towards the first and arrive at the end point 
+	from the direction of the second control point. If you don't want to curve the line leave the values for the control points as -1.
+        If you wanted to use just 1 controlling point then use the same values for CP1 and 2</p>
+
+    <table border=1 id=lines width=40%>
+      <tr><th>Start X</th><th>Start Y</th><th>End X</th><th>End Y</th>
+	  <th>Control Point 1 X</th><th>Control Point 1 Y</th>
+	  <th>Control Point 2 X</th><th>Control Point 2 Y</th>
+          <th>Avg. HUD Speed</th><th>ROC ft/mt.</th><th>Color</th>
+      </tr>
+      <tr>
+	  <td><input name="sx" size=7></input></td>
+	  <td><input name="sy" size=7></input></td>
+	  <td><input name="ex" size=7></input></td>
+	  <td><input name="ey" size=7></input></td>
+	  <td><input name="cx1"  size=7 value=-1></input></td>
+	  <td><input name="cy1" size=7 value=-1></input></td>
+	  <td><input name="cx2" size=7 value=-1></input></td>
+	  <td><input name="cy2"  size=7 value=-1></input></td>
+	  <td><input name="ags" size=3></input></td>
+	  <td><input name="roc" size=4></input></td>
+	  <td><select name="lco">
+		<option>red
+		<option>blue
+		<option>green
+		<option>white
+		<option>black
+	      </select>
+	  </td>
+	  <td><button type=button id=del onclick="removearow('lines', this,2)">X</button></td>
+      </tr>
+    </table>
+    <button type=button id=addcurve onclick="addarow('lines',1)">Add Line/Curve</button>
+
+        
+    <h2>Text</h2>
+      <p>enter top left coordinates, and the text you want to display and color of text. Each line is
+      drawn by itself below the previous line</p>
+
+    <table border=1 id=texttab width=40%>
+      <tr><th>Top Left X</th><th>Top Left Y</th><th>Text</th><th>Color</th></tr>
+      <tr>
+	  <td><input name="tx"></td>
+	  <td><input name="ty"></td>
+	  <td><textarea name=maptext rows=5 cols=30></textarea></td>
+	  <td><select name=tco>
+		<option>red
+		<option>blue
+		<option>green
+		<option>white
+		<option>black
+	      </select>
+	  </td>
+	  <td><button type=button id=del onclick="removearow('texttab', this,2)">X</button></td>
+      </tr>
+    </table>
+    <button type=button id=addtext onclick="addarow('texttab',1)">Add Text</button>
+
+    <h2>Hit Generate DTF, then cut and paste below commands into a DTF file of your choice</h2>
+
+    <table border=1 id=dtf width=40%>
+      <tr><td><button type=button name="GenerateDTF" value="Generate DTF" onclick="generateDTF()">Generate DTF</button></tr>
+      <tr>	  
+	    <td rowspan=10><textarea id=dtftext rows=20 cols=80></textarea></td>
+      </tr>
+    </table>
+
+    
+    <hr>
+    <address><a href="mailto:raviyer@yahoo.com">noflyz</a></address>
+    <address><a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a></address>
+    <address><a href="http://www.gnu.org/licenses/gpl.html"><img src="http://www.gnu.org/graphics/gplv3-127x51.png"></img></a></address>
+<!-- Created: Sat Jun 11 17:13:22 PDT 2011 -->
+<!-- hhmts start -->
+Last modified: Sat Jun 25 11:51:45 PDT 2011
+<!-- hhmts end -->
+    </form>
+  </body>
+</html>
